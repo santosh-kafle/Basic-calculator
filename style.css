@@ -1,0 +1,71 @@
+/* body decorations such as center and height along with background color */
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 80%)
+}
+
+/* font family and backup font given to the calculator along with dark background  color */
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+/* design eliments for the display  */
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+/* organizing keys in grid with suitable gaps for visual apperance */
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+/* making buttons appear nicer for asthetic reasons and giving it a rounder look */
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* hover effct for number buttons. */
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+
+}
+/* on click effects for the number buttons */
+button:active{
+    background-color: hsl(0, 0%, 55%);
+
+}
+/* background color for operators. to make it appear oranceish */
+.operator-btn{
+    background-color: hsl(38, 84%, 49%);
+}
+/* on hover effect for operator */
+.operator-btn:hover{
+    background-color: hsl(38, 84%, 70%);
+
+}
+/* on click it changes color and becomes little lighter showing visually that the button is clicked */
+.operator-btn:active{
+    background-color: hsl(38, 84%, 85%);
+
+}
